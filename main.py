@@ -24,3 +24,23 @@ for letter in chosen_word:
 
 #TODO-3: - Print 'display' and you should see the guessed letter in the correct position and every other letter replace with "_".
 #Hint - Don't worry about getting the user to guess the next letter. We'll tackle that in step 3.
+#Libreria random
+import random
+#Lista con palabras random
+word_list = ["aardvark", "baboon", "camel"]
+#Seleccion aleatoria de la palabra 
+chosen_word = random.choice(word_list)
+#Conversion de la palabra aleatoria escogida a lista
+display = list(chosen_word)
+print(display)
+
+''' First Challenge  
+'''
+# Inicializacion de h como contenedor
+h = ""
+# Conversion de h entre lista para separar cada elemento
+underscore = list(h) #Palabra cuasi mas importante
+#Generacion de la lista con los underscore 
+for i in display :
+    underscore.append("_") 
+
